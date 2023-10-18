@@ -1,4 +1,5 @@
 #body {
+    font-family: 'Roboto', sans-serif;
     color: rgb(197, 188, 188);
     padding: 0;
     margin: 0;
@@ -22,6 +23,11 @@
     /* width: 400px; */
     flex: 1;
     padding: 0 15px 0 15px;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start; */
 }
 
 .info-div {
@@ -35,13 +41,14 @@
 }
 
 #role {
-    font-size: 1.5rem;
-    margin-top: 1;
+    color: rgb(143, 143, 143);
+    font-size: 1.2rem;
+    margin-top: 0.5;
 }
 
 #bio {
     font-size: 1rem;
-    width: 50%;
+    width: 70%;
 }
 
 #nav-list {
@@ -100,7 +107,7 @@
 }
 
 #about p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 5%;
 }
@@ -110,8 +117,105 @@
     margin-bottom: 20%;
 }
 
+
 .education-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.study-date {
+    color: rgb(143, 143, 143);
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.institution {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.degree {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: rgb(143, 143, 143);
+    margin-top: 0;
+}
+
+.edu-info p {
+    font-size: 1rem;
+    color: rgb(143, 143, 143);
+}
+
+
+/* Experience Section styling */
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.work-date {
+    color: rgb(143, 143, 143);
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.role {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.work-description {
+    font-size: 1rem;
+    color: rgb(143, 143, 143);
+}
+
+.resume-btn {
+    font-size: 1rem;
+    color: rgb(143, 143, 143);
+    text-decoration: none;
+}
+
+/* Projects Section Styling */
+
+#projects {
+    padding: auto;
+    margin-top: 20%;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-img-container {
+    flex: 1;
+    background-color: red;
+    height: 50px;
+    width: 25px;
+    border: none;
+    border-radius: 3px;
+}
+
+.project-img  {
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.project-info {
+    
+}
+
+footer {
+    color: rgb(197, 188, 188);
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
