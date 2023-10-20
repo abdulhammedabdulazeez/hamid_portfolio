@@ -1,9 +1,9 @@
 #body {
     font-family: 'Roboto', sans-serif;
-    color: rgb(197, 188, 188);
+    color: rgb(212, 222, 238);
     padding: 0;
     margin: 0;
-    background-color: rgb(18, 18, 46) !important;
+    background-color: rgb(16, 24, 43) !important;
 }
 
 #container {
@@ -11,23 +11,17 @@
     padding: 100px 70px 100px 70px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 /* Header Styling */
 
 #header {
-    border: solid 2px white;
     margin-right: 10px;
     height: 100vh;
     /* width: 400px; */
     flex: 1;
     padding: 0 15px 0 15px;
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start; */
 }
 
 .info-div {
@@ -41,12 +35,12 @@
 }
 
 #role {
-    color: rgb(143, 143, 143);
     font-size: 1.2rem;
     margin-top: 0.5;
 }
 
 #bio {
+    color: rgb(135, 151, 175);
     font-size: 1rem;
     width: 70%;
 }
@@ -57,16 +51,23 @@
 
 #nav-list li {
     padding: 10px;
+    width: 50px;
 }
+
 
 #nav-list li a {
     font-size: 1rem;
     text-decoration: none;
-    color: rgb(197, 188, 188);
+    color: rgb(135, 151, 175);
+    transition: color 0.15s ease-in-out;
 }
 
 #nav-list li a:hover {
     color: white;
+}
+
+#nav-list .active a {
+    color: red; 
 }
 
 #social-media {
@@ -82,13 +83,12 @@
 .icons {
     font-size: 1.5rem;
     text-decoration: none;
-    color: rgb(197, 188, 188);
+    color: rgb(135, 153, 187);
 }
 
 /* Main Styling */
 
 #main {
-    border: solid 2px grey;
     margin-left: 10px;
     height: 100vh;
     flex: 1;
@@ -107,6 +107,7 @@
 }
 
 #about p {
+    color: rgb(157, 174, 204);
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 5%;
@@ -119,15 +120,28 @@
 
 
 .education-container {
+    padding: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: first baseline;
+    margin-bottom: 30px;
+    transition: background-color 0.15s ease-in-out, border-radius 0.15s ease-in-out;
+}
+
+.education-container:hover {
+    background-color: rgba(212, 212, 212, 0.089);
+    border-radius: 4px;
 }
 
 .study-date {
-    color: rgb(143, 143, 143);
+    color: rgb(157, 174, 204);
     font-size: 0.8rem;
-    font-weight: lighter;
+    width: 100px;
+}
+
+.edu-info {
+    flex: 1;
+    margin-left: 15px;
 }
 
 .institution {
@@ -138,14 +152,13 @@
 
 .degree {
     font-size: 0.8rem;
-    font-weight: lighter;
     color: rgb(143, 143, 143);
     margin-top: 0;
 }
 
 .edu-info p {
     font-size: 1rem;
-    color: rgb(143, 143, 143);
+    color: rgb(157, 174, 204);
 }
 
 
@@ -153,14 +166,27 @@
 
 .experience-container {
     display: flex;
+    padding: 15px;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: first baseline;
+    margin-bottom: 30px;
+    transition: background-color 0.15s ease-in-out, border-radius 0.15s ease-in-out;
+}
+
+.experience-container:hover {
+    background-color: rgba(212, 212, 212, 0.089);
+    border-radius: 4px;
 }
 
 .work-date {
-    color: rgb(143, 143, 143);
+    color: rgb(157, 174, 204);
     font-size: 0.8rem;
-    font-weight: lighter;
+    width: 100px;
+}
+
+.work-info {
+    flex: 1;
+    margin-left: 15px;
 }
 
 .role {
@@ -171,13 +197,18 @@
 
 .work-description {
     font-size: 1rem;
-    color: rgb(143, 143, 143);
+    color: rgb(157, 174, 204);
 }
 
 .resume-btn {
+    font-weight: bold;
     font-size: 1rem;
-    color: rgb(143, 143, 143);
+    color: rgb(212, 222, 238);
     text-decoration: none;
+}
+
+.resume-btn:hover {
+    text-decoration: underline;
 }
 
 /* Projects Section Styling */
@@ -188,18 +219,24 @@
 }
 
 .projects-container {
+    padding: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: first baseline;
+    margin-bottom: 50px;
+    transition: background-color 0.15s ease-in-out, border-radius 0.15s ease-in-out;
+}
+
+.projects-container:hover {
+    background-color: rgba(212, 212, 212, 0.089);
+    border-radius: 4px;
 }
 
 .project-img-container {
-    flex: 1;
-    background-color: red;
-    height: 50px;
-    width: 25px;
+    width: 80px;
     border: none;
     border-radius: 3px;
+    margin-right: 15px;
 }
 
 .project-img  {
@@ -207,10 +244,29 @@
     object-position: center;
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
 .project-info {
-    
+    flex: 1;
+    margin-left: 15px;
+}
+
+.projects-archive {
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(212, 222, 238);
+    text-decoration: none;
+    transition: text-decoration 0.15s ease-in-out;
+}
+
+.projects-archive:hover {
+    text-decoration: underline;
+}
+
+.external-link {
+    color: rgb(212, 222, 238);
+    text-decoration: none;
 }
 
 footer {
@@ -218,4 +274,90 @@ footer {
     padding: 0;
     margin: 0;
     text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (650px <= width <= 900px) {
+    #name {
+        font-size: 1.8rem;
+    }
+
+    #role {
+        font-size: 0.8rem;
+    }
+
+    #bio {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    #nav-list li a {
+        font-size: 0.8rem;
+    }
+
+    .icons {
+        font-size: 1rem;
+    }
+
+    #about p {
+        font-size: 0.8rem;
+    }
+
+    .education-container {
+        flex-direction: column;
+    }
+
+    .study-date {
+        font-size: 0.6rem;
+    }
+
+    .institution {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .edu-info p {
+        font-size: 0.8rem;
+    }
+
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .work-date {
+        font-size: 0.6rem;
+    }
+
+    .role {
+        font-size: 0.8rem;
+    }
+
+    .work-description {
+        font-size: 0.8rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-img-container {
+        width: 100%;
+    }
+
+    .Project-title {
+        font-size: 1rem;
+    }
+
+    .project-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 599px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
